@@ -13,7 +13,7 @@ COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-	bats && \
+	bats ca-certificates && \
 	apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
